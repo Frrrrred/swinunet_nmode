@@ -1,0 +1,22 @@
+MODEL:
+  TYPE: swinUnet_nmODE
+  NAME: swinUnet_nmODE_pretrain
+  DROP_PATH_RATE: 0.1
+  SWIN:
+    EMBED_DIM: 32
+    DEPTHS: [ 2, 2, 2, 2 ]
+    NUM_HEADS: [ 2, 4, 8, 16 ]
+    WINDOW_SIZE: 8
+DATA:
+  IMG_SIZE: 512
+TRAIN:
+  EPOCHS: 100
+  WARMUP_EPOCHS: 10
+  BASE_LR: 1.25e-3
+  WARMUP_LR: 2.5e-7
+  MIN_LR: 2.5e-7
+  WEIGHT_DECAY: 0.05
+  LAYER_DECAY: 0.9
+PRINT_FREQ: 100
+SAVE_FREQ: 5
+TAG: swinUnet_nmODE_pretrain__swin_base__img512_window8__100ep
