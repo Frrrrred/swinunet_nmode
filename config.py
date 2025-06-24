@@ -27,9 +27,9 @@ _C.DATA.PIN_MEMORY = True
 _C.DATA.NUM_WORKERS = 8
 
 # [SwinUnet_nmODE] Mask patch size for MaskGenerator
-_C.DATA.MASK_PATCH_SIZE = [16, 32, 64]
+_C.DATA.MASK_PATCH_SIZE = [8, 16, 32, 64]
 # [SwinUnet_nmODE] Mask ratio for MaskGenerator
-_C.DATA.MASK_RATIO = [0.3, 0.4, 0.5, 0.6, 0.7]
+_C.DATA.MASK_RATIO = [0.75]
 
 # -----------------------------------------------------------------------------
 # Model settings
